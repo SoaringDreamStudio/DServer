@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1426585245 source:c:\project\codeblocksversion\testping\mineserver\simple.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+	"Net.h"
+
+1426585506 c:\project\codeblocksversion\testping\mineserver\net.h
+	<winsock2.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<fcntl.h>
+	<assert.h>
+	<map>
+	<unistd.h>
+
+1429276034 source:c:\users\avdrine\documents\testping\mineserver\simple.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+	"Net.h"
+
+1429276129 c:\users\avdrine\documents\testping\mineserver\net.h
+	<winsock2.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<fcntl.h>
+	<assert.h>
+	<map>
+	<unistd.h>
+
+1430511698 source:c:\users\avdrine\documents\testping\mineserver\gameloop.cpp
+	"gameLoop.h"
+
+1430511631 c:\users\avdrine\documents\testping\mineserver\gameloop.h
+
