@@ -35,15 +35,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="CollisionRectangle.cpp" />
-		<Unit filename="CollisionRectangle.h" />
-		<Unit filename="GameStructures.cpp" />
-		<Unit filename="GameStructures.h" />
+		<Unit filename="Net.cpp" />
 		<Unit filename="Net.h" />
-		<Unit filename="Simple.cpp" />
-		<Unit filename="gameLoop.cpp" />
-		<Unit filename="gameLoop.h" />
-		<Unit filename="struct.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
