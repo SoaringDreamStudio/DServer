@@ -35,8 +35,46 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Main.h" />
 		<Unit filename="Net.cpp" />
 		<Unit filename="Net.h" />
+		<Unit filename="StartServer.cpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="objects.h" />
+		<Unit filename="objects/Environment.cpp" />
+		<Unit filename="objects/Environment.h" />
+		<Unit filename="objects/Environment/Live.cpp" />
+		<Unit filename="objects/Environment/Live.h" />
+		<Unit filename="objects/Environment/Live/Characters.cpp" />
+		<Unit filename="objects/Environment/Live/Characters.h" />
+		<Unit filename="objects/Environment/Live/Mobs.cpp" />
+		<Unit filename="objects/Environment/Live/Mobs.h" />
+		<Unit filename="objects/Environment/NonLive.cpp" />
+		<Unit filename="objects/Environment/NonLive.h" />
+		<Unit filename="objects/Environment/NonLive/Ground.cpp" />
+		<Unit filename="objects/Environment/NonLive/Ground.h" />
+		<Unit filename="objects/Environment/NonLive/Objects.cpp" />
+		<Unit filename="objects/Environment/NonLive/Objects.h" />
+		<Unit filename="objects/Environment/NonLive/Objects/Normal.cpp" />
+		<Unit filename="objects/Environment/NonLive/Objects/Normal.h" />
+		<Unit filename="objects/Environment/NonLive/Objects/Trigger.cpp" />
+		<Unit filename="objects/Environment/NonLive/Objects/Trigger.h" />
+		<Unit filename="objects/Environment/NonLive/Objects/Wtrig.cpp" />
+		<Unit filename="objects/Environment/NonLive/Objects/Wtrig.h" />
+		<Unit filename="objects/Items.cpp" />
+		<Unit filename="objects/Items.h" />
+		<Unit filename="objects/Items/Equip.cpp" />
+		<Unit filename="objects/Items/Equip.h" />
+		<Unit filename="objects/Items/Equip/Armor.cpp" />
+		<Unit filename="objects/Items/Equip/Armor.h" />
+		<Unit filename="objects/Items/Equip/Weapon.cpp" />
+		<Unit filename="objects/Items/Equip/Weapon.h" />
+		<Unit filename="objects/Items/Equip/Weapon/Melee.cpp" />
+		<Unit filename="objects/Items/Equip/Weapon/Melee.h" />
+		<Unit filename="objects/Items/Equip/Weapon/Range.cpp" />
+		<Unit filename="objects/Items/Equip/Weapon/Range.h" />
+		<Unit filename="objects/Items/Usable.cpp" />
+		<Unit filename="objects/Items/Usable.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
