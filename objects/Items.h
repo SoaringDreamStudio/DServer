@@ -1,7 +1,11 @@
+#pragma once
 class Items
 {
 public:
-	Items();
+	Items(int ID);
 	~Items(void);
 
+protected:
+    int ID;
+    //Sprite(SDL_Sprite)
 };

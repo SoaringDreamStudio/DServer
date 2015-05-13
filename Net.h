@@ -3,7 +3,6 @@
 	http://www.gaffer.org/networking-for-game-programmers
 	Author: Glenn Fiedler <gaffer@gaffer.org>
 */
-
 #ifndef NET_H
 #define NET_H
 
@@ -40,11 +39,13 @@
 
 #include <assert.h>
 #include <map>
+#include <stdio.h>
+#include <iostream>
 
 namespace net
 {
 	// platform independent wait for n seconds
-
+/*
 #if PLATFORM == PLATFORM_WINDOWS
 
 	void wait( float seconds )
@@ -57,7 +58,7 @@ namespace net
 	#include <unistd.h>
 	void wait( float seconds ) { usleep( (int) ( seconds * 1000000.0f ) ); }
 
-#endif
+#endif*/
 
 	// internet address
 

@@ -1,7 +1,29 @@
-class Enviroment
+#pragma once
+#include <string>
+#include <vector>
+#include "../struct.h"
+class Environment
 {
 public:
-	Enviroment();
-	~Enviroment(void);
+	Environment(Rect Hitbox,
+    bool ExistOnMap,
+    int ID,
+    int PosX,
+    int PosY,
+    std::string ActiveAnimation,
+    std::vector<AnimationInfo> Animations);
+
+	~Environment(void);
+
+protected:
+
+    Rect Hitbox;
+    bool ExistOnMap;
+    int ID;
+    int PosX;
+    int PosY;
+    //Sprite(SDL_Sprite)
+    std::string ActiveAnimation;
+    std::vector<AnimationInfo> Animations;
 
 };

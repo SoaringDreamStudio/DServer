@@ -39,6 +39,7 @@
 		<Unit filename="Net.cpp" />
 		<Unit filename="Net.h" />
 		<Unit filename="StartServer.cpp" />
+		<Unit filename="libraries.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="objects.h" />
 		<Unit filename="objects/Environment.cpp" />
@@ -75,6 +76,7 @@
 		<Unit filename="objects/Items/Equip/Weapon/Range.h" />
 		<Unit filename="objects/Items/Usable.cpp" />
 		<Unit filename="objects/Items/Usable.h" />
+		<Unit filename="struct.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

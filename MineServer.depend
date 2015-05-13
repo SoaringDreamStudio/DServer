@@ -1,0 +1,162 @@
+# depslib dependency file v1.0
+1431547771 source:c:\users\avdrine\documents\github\dserver\main.cpp
+	"Main.h"
+
+1431547761 c:\users\avdrine\documents\github\dserver\main.h
+	"libraries.h"
+
+1431547813 c:\users\avdrine\documents\github\dserver\libraries.h
+	<iostream>
+	<vector>
+	<map>
+	<fstream>
+	<sstream>
+	<string>
+	<cstdlib>
+	<math.h>
+	"Net.h"
+	"struct.h"
+	"objects.h"
+
+1431550333 c:\users\avdrine\documents\github\dserver\net.h
+	<winsock2.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<fcntl.h>
+	<assert.h>
+	<map>
+	<stdio.h>
+	<iostream>
+	<unistd.h>
+
+1431462067 c:\users\avdrine\documents\github\dserver\struct.h
+
+1431548962 c:\users\avdrine\documents\github\dserver\objects.h
+	"objects/Environment.h"
+	"objects/Environment/Live.h"
+	"objects/Environment/Live/Characters.h"
+	"objects/Environment/Live/Mobs.h"
+	"objects/Environment/NonLive.h"
+	"objects/Environment/NonLive/Objects.h"
+	"objects/Environment/NonLive/Objects/Normal.h"
+	"objects/Environment/NonLive/Objects/Trigger.h"
+	"objects/Environment/NonLive/Objects/Wtrig.h"
+	"objects/Environment/NonLive/Ground.h"
+	"objects/Items.h"
+	"objects/Items/Equip.h"
+	"objects/Items/Equip/Armor.h"
+	"objects/Items/Equip/Weapon.h"
+	"objects/Items/Equip/Weapon/Melee.h"
+	"objects/Items/Equip/Weapon/Range.h"
+	"objects/Items/Usable.h"
+
+1431549698 c:\users\avdrine\documents\github\dserver\objects\environment.h
+	<string>
+	<vector>
+	"../struct.h"
+
+1431549238 c:\users\avdrine\documents\github\dserver\objects\environment\live.h
+	"../Environment.h"
+
+1431549192 c:\users\avdrine\documents\github\dserver\objects\environment\live\characters.h
+	"../Live.h"
+	"../../Items.h"
+
+1431549298 c:\users\avdrine\documents\github\dserver\objects\items.h
+
+1431549198 c:\users\avdrine\documents\github\dserver\objects\environment\live\mobs.h
+	"../Live.h"
+	"../../../struct.h"
+
+1431549242 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive.h
+	"../Environment.h"
+
+1431549231 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects.h
+	"../NonLive.h"
+
+1431549207 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\normal.h
+	"../Objects.h"
+
+1431549212 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\trigger.h
+	"../Objects.h"
+
+1431549217 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\wtrig.h
+	"../Objects.h"
+
+1431549253 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\ground.h
+	"../NonLive.h"
+
+1431549275 c:\users\avdrine\documents\github\dserver\objects\items\equip.h
+	"../Items.h"
+
+1431549265 c:\users\avdrine\documents\github\dserver\objects\items\equip\armor.h
+	"../Equip.h"
+
+1431549826 c:\users\avdrine\documents\github\dserver\objects\items\equip\weapon.h
+	<string>
+	"../Equip.h"
+
+1431544884 c:\users\avdrine\documents\github\dserver\objects\items\equip\weapon\melee.h
+	"../Weapon.h"
+	"../../../../struct.h"
+
+1431549258 c:\users\avdrine\documents\github\dserver\objects\items\equip\weapon\range.h
+	"../Weapon.h"
+
+1431549280 c:\users\avdrine\documents\github\dserver\objects\items\usable.h
+	"../Items.h"
+
+1431548288 source:c:\users\avdrine\documents\github\dserver\objects\environment.cpp
+	"Environment.h"
+
+1431548407 source:c:\users\avdrine\documents\github\dserver\objects\environment\live.cpp
+	"Live.h"
+
+1431549712 source:c:\users\avdrine\documents\github\dserver\objects\environment\live\characters.cpp
+	"Characters.h"
+
+1431549726 source:c:\users\avdrine\documents\github\dserver\objects\environment\live\mobs.cpp
+	"Mobs.h"
+
+1431549741 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive.cpp
+	"NonLive.h"
+
+1431549760 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\ground.cpp
+	"Ground.h"
+
+1431543098 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects.cpp
+	"Objects.h"
+
+1431549769 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\normal.cpp
+	"Normal.h"
+
+1431543856 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\trigger.cpp
+	"Trigger.h"
+
+1431549777 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\wtrig.cpp
+	"Wtrig.h"
+
+1431549796 source:c:\users\avdrine\documents\github\dserver\objects\items.cpp
+	"Items.h"
+
+1431549802 source:c:\users\avdrine\documents\github\dserver\objects\items\equip.cpp
+	"Equip.h"
+
+1431544562 source:c:\users\avdrine\documents\github\dserver\objects\items\equip\armor.cpp
+	"Armor.h"
+
+1431544741 source:c:\users\avdrine\documents\github\dserver\objects\items\equip\weapon.cpp
+	"Weapon.h"
+
+1431549844 source:c:\users\avdrine\documents\github\dserver\objects\items\equip\weapon\melee.cpp
+	"Melee.h"
+
+1431545000 source:c:\users\avdrine\documents\github\dserver\objects\items\equip\weapon\range.cpp
+	"Range.h"
+
+1431549849 source:c:\users\avdrine\documents\github\dserver\objects\items\usable.cpp
+	"Usable.h"
+
+1431547560 source:c:\users\avdrine\documents\github\dserver\startserver.cpp
+	"Main.h"
+

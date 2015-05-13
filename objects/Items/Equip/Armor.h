@@ -1,8 +1,12 @@
+#pragma once
 #include "../Equip.h"
 class Armor : public Equip
 {
 public:
-    Armor();
+    Armor(int ID,
+          int def);
 
 	~Armor(void);
+protected:
+    int def;
 };
