@@ -8,7 +8,10 @@ int main(int argc, char *argv[])
 	CMain* cmain = new CMain();
 
     //cmain->LoadConfigs();
-	//cmain->LoadPackets();
+    for(;;)
+    {
+        cmain->LoadPackets();
+    }
 	//cmain->Calculation();
     //cmain->SendPackets();
 

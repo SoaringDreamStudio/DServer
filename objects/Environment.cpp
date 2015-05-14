@@ -16,6 +16,15 @@ Environment::Environment(Rect passed_Hitbox,
     Animations = passed_Animations;
 }
 
+Environment::Environment(int passed_ID,
+                        int passed_PosX,
+                        int passed_PosY)
+{
+    ID = passed_ID;
+    PosX = passed_PosX;
+    PosY = passed_PosY;
+}
+
 Environment::~Environment(void)
 {
 

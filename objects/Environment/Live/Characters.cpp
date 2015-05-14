@@ -44,6 +44,18 @@ Characters::Characters(Rect passed_Hitbox,
     ASLOT = passed_ASLOT;
     Hunger = passed_Hunger;
 }
+Characters::Characters(int passed_ID,
+                int passed_PosX,
+                int passed_PosY,
+                std::string passed_NickName
+                )
+        : Live(passed_ID,
+                passed_PosX,
+                passed_PosY)
+{
+    NickName = passed_NickName;
+
+}
 
 Characters::~Characters(void)
 {

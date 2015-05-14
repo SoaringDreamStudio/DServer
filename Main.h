@@ -12,6 +12,10 @@ public:
     void SaveConfigs();
 
 private:
+    bool InitializeSockets();
+    void ShutdownSockets();
+
+    int LoginClient(std::string,std::string);
 
 	bool quit;
 
@@ -23,5 +27,15 @@ private:
 	std::vector<Wtrig*> wtrig;
 	std::vector<Trigger*> trigger;
 	std::vector<Ground*> ground;
+
+	//переменные для сетевой игры
+    const int ServerPort = 21995;
+    const int ClientPort = 30001;
+    const unsigned int ProtocolId = 0x99887766;
+    const float DeltaTime = 0.25f;
+    const float SendRate = 0.25f;
+    const float TimeOut = 10.0f;
+
+     net::Socket* socket;
 };
 

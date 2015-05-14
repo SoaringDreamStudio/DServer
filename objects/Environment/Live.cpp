@@ -36,6 +36,17 @@ Live::Live(Rect passed_Hitbox,
     AttackAnimationTime = passed_AttackAnimationTime;
 }
 
+Live::Live(int passed_ID,
+            int passed_PosX,
+            int passed_PosY)
+    :Environment(passed_ID,
+                passed_PosX,
+                passed_PosY)
+
+{
+
+}
+
 Live::~Live(void)
 {
 

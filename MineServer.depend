@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1431547771 source:c:\users\avdrine\documents\github\dserver\main.cpp
+1431616382 source:c:\users\avdrine\documents\github\dserver\main.cpp
 	"Main.h"
 
-1431547761 c:\users\avdrine\documents\github\dserver\main.h
+1431613958 c:\users\avdrine\documents\github\dserver\main.h
 	"libraries.h"
 
-1431547813 c:\users\avdrine\documents\github\dserver\libraries.h
+1431615295 c:\users\avdrine\documents\github\dserver\libraries.h
 	<iostream>
 	<vector>
 	<map>
@@ -13,20 +13,20 @@
 	<sstream>
 	<string>
 	<cstdlib>
+	<windows.h>
 	<math.h>
 	"Net.h"
 	"struct.h"
 	"objects.h"
 
-1431550333 c:\users\avdrine\documents\github\dserver\net.h
+1431608399 c:\users\avdrine\documents\github\dserver\net.h
 	<winsock2.h>
 	<sys/socket.h>
 	<netinet/in.h>
 	<fcntl.h>
 	<assert.h>
 	<map>
-	<stdio.h>
-	<iostream>
+	<ctime>
 	<unistd.h>
 
 1431462067 c:\users\avdrine\documents\github\dserver\struct.h
@@ -50,15 +50,15 @@
 	"objects/Items/Equip/Weapon/Range.h"
 	"objects/Items/Usable.h"
 
-1431549698 c:\users\avdrine\documents\github\dserver\objects\environment.h
+1431619213 c:\users\avdrine\documents\github\dserver\objects\environment.h
 	<string>
 	<vector>
 	"../struct.h"
 
-1431549238 c:\users\avdrine\documents\github\dserver\objects\environment\live.h
+1431618970 c:\users\avdrine\documents\github\dserver\objects\environment\live.h
 	"../Environment.h"
 
-1431549192 c:\users\avdrine\documents\github\dserver\objects\environment\live\characters.h
+1431616172 c:\users\avdrine\documents\github\dserver\objects\environment\live\characters.h
 	"../Live.h"
 	"../../Items.h"
 
@@ -106,10 +106,10 @@
 1431549280 c:\users\avdrine\documents\github\dserver\objects\items\usable.h
 	"../Items.h"
 
-1431548288 source:c:\users\avdrine\documents\github\dserver\objects\environment.cpp
+1431619357 source:c:\users\avdrine\documents\github\dserver\objects\environment.cpp
 	"Environment.h"
 
-1431548407 source:c:\users\avdrine\documents\github\dserver\objects\environment\live.cpp
+1431619091 source:c:\users\avdrine\documents\github\dserver\objects\environment\live.cpp
 	"Live.h"
 
 1431549712 source:c:\users\avdrine\documents\github\dserver\objects\environment\live\characters.cpp
@@ -157,6 +157,12 @@
 1431549849 source:c:\users\avdrine\documents\github\dserver\objects\items\usable.cpp
 	"Usable.h"
 
-1431547560 source:c:\users\avdrine\documents\github\dserver\startserver.cpp
+1431593589 source:c:\users\avdrine\documents\github\dserver\startserver.cpp
 	"Main.h"
+
+1431608687 source:c:\users\avdrine\documents\github\dserver\net.cpp
+	"Net.h"
+	<cstdio>
+	<winsock2.h>
+	<iostream>
 
