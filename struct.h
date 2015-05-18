@@ -21,3 +21,5 @@ struct Rect
     int w;
     int h;
 };
+
+bool allTrue(bool x[], int Size);

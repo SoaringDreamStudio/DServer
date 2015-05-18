@@ -7,4 +7,6 @@ public:
 
 	~Equip(void);
 
+protected:
+
 };

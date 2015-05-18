@@ -3,20 +3,16 @@
 class Wtrig : public Objects
 {
 public:
-    Wtrig(Rect Hitbox,
-    bool ExistOnMap,
-    int ID,
-    int PosX,
-    int PosY,
-    std::string ActiveAnimation,
-    std::vector<AnimationInfo> Animations,
-    bool Collision,
-    bool BulletCollision,
-    int ConnectionID,
-    bool Status
-    );
+
+    Wtrig(coordinates* spawn,
+                int ID,
+                int PosX,
+                int PosY,
+                bool Status,
+                int ConnectionID);
 
 	~Wtrig(void);
+
 
 protected:
     int ConnectionID;

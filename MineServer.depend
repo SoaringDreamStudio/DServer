@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1431616382 source:c:\users\avdrine\documents\github\dserver\main.cpp
+1431925459 source:c:\users\avdrine\documents\github\dserver\main.cpp
 	"Main.h"
 
-1431613958 c:\users\avdrine\documents\github\dserver\main.h
+1431895585 c:\users\avdrine\documents\github\dserver\main.h
 	"libraries.h"
 
 1431615295 c:\users\avdrine\documents\github\dserver\libraries.h
@@ -19,7 +19,7 @@
 	"struct.h"
 	"objects.h"
 
-1431608399 c:\users\avdrine\documents\github\dserver\net.h
+1431922384 c:\users\avdrine\documents\github\dserver\net.h
 	<winsock2.h>
 	<sys/socket.h>
 	<netinet/in.h>
@@ -29,7 +29,7 @@
 	<ctime>
 	<unistd.h>
 
-1431462067 c:\users\avdrine\documents\github\dserver\struct.h
+1431921839 c:\users\avdrine\documents\github\dserver\struct.h
 
 1431548962 c:\users\avdrine\documents\github\dserver\objects.h
 	"objects/Environment.h"
@@ -50,43 +50,47 @@
 	"objects/Items/Equip/Weapon/Range.h"
 	"objects/Items/Usable.h"
 
-1431619213 c:\users\avdrine\documents\github\dserver\objects\environment.h
+1431921883 c:\users\avdrine\documents\github\dserver\objects\environment.h
 	<string>
 	<vector>
+	<iostream>
+	<fstream>
+	<sstream>
+	<stdlib.h>
 	"../struct.h"
 
-1431618970 c:\users\avdrine\documents\github\dserver\objects\environment\live.h
+1431878475 c:\users\avdrine\documents\github\dserver\objects\environment\live.h
 	"../Environment.h"
 
-1431616172 c:\users\avdrine\documents\github\dserver\objects\environment\live\characters.h
+1431914454 c:\users\avdrine\documents\github\dserver\objects\environment\live\characters.h
 	"../Live.h"
 	"../../Items.h"
 
-1431549298 c:\users\avdrine\documents\github\dserver\objects\items.h
+1431895488 c:\users\avdrine\documents\github\dserver\objects\items.h
 
-1431549198 c:\users\avdrine\documents\github\dserver\objects\environment\live\mobs.h
+1431895495 c:\users\avdrine\documents\github\dserver\objects\environment\live\mobs.h
 	"../Live.h"
 	"../../../struct.h"
 
-1431549242 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive.h
+1431878458 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive.h
 	"../Environment.h"
 
-1431549231 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects.h
+1431878491 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects.h
 	"../NonLive.h"
 
-1431549207 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\normal.h
+1431880297 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\normal.h
 	"../Objects.h"
 
-1431549212 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\trigger.h
+1431880301 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\trigger.h
 	"../Objects.h"
 
-1431549217 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\wtrig.h
+1431880307 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\wtrig.h
 	"../Objects.h"
 
-1431549253 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\ground.h
+1431880314 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\ground.h
 	"../NonLive.h"
 
-1431549275 c:\users\avdrine\documents\github\dserver\objects\items\equip.h
+1431895501 c:\users\avdrine\documents\github\dserver\objects\items\equip.h
 	"../Items.h"
 
 1431549265 c:\users\avdrine\documents\github\dserver\objects\items\equip\armor.h
@@ -96,7 +100,7 @@
 	<string>
 	"../Equip.h"
 
-1431544884 c:\users\avdrine\documents\github\dserver\objects\items\equip\weapon\melee.h
+1431895512 c:\users\avdrine\documents\github\dserver\objects\items\equip\weapon\melee.h
 	"../Weapon.h"
 	"../../../../struct.h"
 
@@ -106,34 +110,34 @@
 1431549280 c:\users\avdrine\documents\github\dserver\objects\items\usable.h
 	"../Items.h"
 
-1431619357 source:c:\users\avdrine\documents\github\dserver\objects\environment.cpp
+1431921984 source:c:\users\avdrine\documents\github\dserver\objects\environment.cpp
 	"Environment.h"
 
-1431619091 source:c:\users\avdrine\documents\github\dserver\objects\environment\live.cpp
+1431877973 source:c:\users\avdrine\documents\github\dserver\objects\environment\live.cpp
 	"Live.h"
 
-1431549712 source:c:\users\avdrine\documents\github\dserver\objects\environment\live\characters.cpp
+1431878130 source:c:\users\avdrine\documents\github\dserver\objects\environment\live\characters.cpp
 	"Characters.h"
 
-1431549726 source:c:\users\avdrine\documents\github\dserver\objects\environment\live\mobs.cpp
+1431896280 source:c:\users\avdrine\documents\github\dserver\objects\environment\live\mobs.cpp
 	"Mobs.h"
 
-1431549741 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive.cpp
+1431877961 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive.cpp
 	"NonLive.h"
 
-1431549760 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\ground.cpp
+1431878099 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\ground.cpp
 	"Ground.h"
 
-1431543098 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects.cpp
+1431877983 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects.cpp
 	"Objects.h"
 
-1431549769 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\normal.cpp
+1431878105 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\normal.cpp
 	"Normal.h"
 
-1431543856 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\trigger.cpp
+1431878102 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\trigger.cpp
 	"Trigger.h"
 
-1431549777 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\wtrig.cpp
+1431878100 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\wtrig.cpp
 	"Wtrig.h"
 
 1431549796 source:c:\users\avdrine\documents\github\dserver\objects\items.cpp
@@ -148,7 +152,7 @@
 1431544741 source:c:\users\avdrine\documents\github\dserver\objects\items\equip\weapon.cpp
 	"Weapon.h"
 
-1431549844 source:c:\users\avdrine\documents\github\dserver\objects\items\equip\weapon\melee.cpp
+1431896289 source:c:\users\avdrine\documents\github\dserver\objects\items\equip\weapon\melee.cpp
 	"Melee.h"
 
 1431545000 source:c:\users\avdrine\documents\github\dserver\objects\items\equip\weapon\range.cpp
@@ -157,12 +161,15 @@
 1431549849 source:c:\users\avdrine\documents\github\dserver\objects\items\usable.cpp
 	"Usable.h"
 
-1431593589 source:c:\users\avdrine\documents\github\dserver\startserver.cpp
+1431899434 source:c:\users\avdrine\documents\github\dserver\startserver.cpp
 	"Main.h"
 
-1431608687 source:c:\users\avdrine\documents\github\dserver\net.cpp
+1431924418 source:c:\users\avdrine\documents\github\dserver\net.cpp
 	"Net.h"
 	<cstdio>
 	<winsock2.h>
 	<iostream>
+
+1431921999 source:c:\users\avdrine\documents\github\dserver\struct.cpp
+	"struct.h"
 

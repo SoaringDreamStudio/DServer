@@ -1,30 +1,18 @@
 #include "Wtrig.h"
 
-Wtrig::Wtrig(Rect passed_Hitbox,
-                bool passed_ExistOnMap,
+Wtrig::Wtrig(coordinates* passed_spawn,
                 int passed_ID,
                 int passed_PosX,
                 int passed_PosY,
-                std::string passed_ActiveAnimation,
-                std::vector<AnimationInfo> passed_Animations,
-                bool passed_Collision,
-                bool passed_BulletCollision,
-                int passed_ConnectionID,
-                bool passed_Status
-                )
-    : Objects(passed_Hitbox,
-                passed_ExistOnMap,
+                bool passed_Status,
+                int passed_ConnectionID)
+    : Objects("Wtrig",
+                passed_spawn,
                 passed_ID,
                 passed_PosX,
-                passed_PosY,
-                passed_ActiveAnimation,
-                passed_Animations,
-                passed_Collision,
-                passed_BulletCollision
-                )
+                passed_PosY)
 {
-    ConnectionID = passed_ConnectionID;
-    Status = passed_Status;
+
 }
 
 Wtrig::~Wtrig(void)

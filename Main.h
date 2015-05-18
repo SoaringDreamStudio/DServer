@@ -5,7 +5,8 @@ class CMain
 public:
 	CMain();
 	~CMain(void);
-	bool LoadConfigs();
+	void LoadConfigs();
+	void LoadStage();
 	void LoadPackets();
 	void Calculation();
     void SendPackets();
@@ -28,6 +29,8 @@ private:
 	std::vector<Trigger*> trigger;
 	std::vector<Ground*> ground;
 
+	coordinates spawn;
+
 	//переменные для сетевой игры
     const int ServerPort = 21995;
     const int ClientPort = 30001;
@@ -35,6 +38,9 @@ private:
     const float DeltaTime = 0.25f;
     const float SendRate = 0.25f;
     const float TimeOut = 10.0f;
+
+    //переменные конфигурации сервера
+    std::string nameStage;
 
      net::Socket* socket;
 };

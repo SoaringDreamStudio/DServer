@@ -1,0 +1,18 @@
+ID: 1
+name: Ground1
+Size: 170 302
+hitbox: x: 0 y: 0 w: 0 h: 0
+FilePathSprite: data/img/Characters/01.png
+SetCrops: 0 0
+Animation: name: an1 parameters: 0 0 0 0
+Animation: name: an2 parameters: 0 0 0 0
+fpX: 0
+fpY: 0
+HP: 100
+MS: 5
+Range: 10
+AttackDmg: 5
+Defense: 0
+AttackCDTime: 1000
+AttackAnimationTime: 500
+-

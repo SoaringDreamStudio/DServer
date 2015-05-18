@@ -83,10 +83,10 @@
         this->timeout = timeout;
         mode = Server;
         running = true;
-        printf("s1 ");
         addressPort = Address(address, passed_port);
         lastConnect = time (NULL);
         //ClearData();
+        firstTime = true;
     }
 
     Connection::~Connection()
@@ -404,15 +404,18 @@
                 std::map<unsigned int, Connection*>::iterator result = connectedClients.find(address);
                 if (result != connectedClients.end())
                 {
-                    std::cout << "Element found: " << std::endl;
+                    //std::cout << "Element found: " << std::endl;
                     //отправить пакет на анализ
                     result->second->ReceivePacket(packet, size - 4);
+
+                    result->second->ConnectOnce();
                 }
                 else
                 {
                     //проверка на корректность
                     if(packet[0] != 10)
                     {
+                        std::cout << int(packet[0]) << std::endl;
                         std::cout << "Error! Too bad packet to registration" << std::endl;
                         //отправить пакет с ошибкой
 
@@ -440,7 +443,8 @@
                     else
                     {
                         std::cout << "Creating new connection" << std::endl;
-                        connectedClients[address] = new Connection(address, protocolId, timeout, destinationPort);
+                        connectedClients[address] = new Connection(address, protocolId, timeout, port);
+
                     }
                     //отправить пакет на анализ
 

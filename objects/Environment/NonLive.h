@@ -3,14 +3,15 @@
 class NonLive : public Environment
 {
 public:
-    NonLive(Rect Hitbox,
-            bool ExistOnMap,
+
+    NonLive(std::string className,
+            coordinates* spawn,
             int ID,
             int PosX,
-            int PosY,
-            std::string ActiveAnimation,
-            std::vector<AnimationInfo> Animations);
+            int PosY);
 
 	~NonLive(void);
+
+	void LoadConfigs();
 
 };

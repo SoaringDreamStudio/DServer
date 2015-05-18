@@ -3,18 +3,16 @@
 class Objects : public NonLive
 {
 public:
-    Objects(Rect Hitbox,
-            bool ExistOnMap,
+
+    Objects(std::string className,
+            coordinates* spawn,
             int ID,
             int PosX,
-            int PosY,
-            std::string ActiveAnimation,
-            std::vector<AnimationInfo> Animations,
-            bool Collision,
-            bool BulletCollision
-            );
+            int PosY);
 
 	~Objects(void);
+
+	void LoadConfigs();
 protected:
     bool Collision;
     bool BulletCollision;

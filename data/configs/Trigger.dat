@@ -1,0 +1,11 @@
+ID: 1
+name: Ground1
+Size: 100 100
+hitbox: x: 0 y: 0 w: 0 h: 0
+FilePathSprite: data/img/grounds/1.png
+SetCrops: 0 0
+Animation: name: an1 parameters: 0 0 0 0
+Animation: name: an2 parameters: 0 0 0 0
+Collision: 1
+BulletCollision: 1
+-

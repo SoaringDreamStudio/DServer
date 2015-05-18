@@ -3,18 +3,16 @@
 class Normal : public Objects
 {
 public:
-    Normal(Rect Hitbox,
-            bool ExistOnMap,
+
+    Normal(coordinates* spawn,
             int ID,
             int PosX,
-            int PosY,
-            std::string ActiveAnimation,
-            std::vector<AnimationInfo> Animations,
-            bool Collision,
-            bool BulletCollision,
-            bool PickUpAble);
+            int PosY);
+
 
 	~Normal(void);
+
+	void LoadConfigs();
 protected:
     bool PickUpAble;
 

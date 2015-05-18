@@ -7,5 +7,6 @@ public:
 
 protected:
     int ID;
+
     //Sprite(SDL_Sprite)
 };

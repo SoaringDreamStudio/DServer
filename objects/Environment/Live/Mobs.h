@@ -4,27 +4,15 @@
 class Mobs : public Live
 {
 public:
-    Mobs(Rect Hitbox,
-    bool ExistOnMap,
-    int ID,
-    int PosX,
-    int PosY,
-    std::string ActiveAnimation,
-    std::vector<AnimationInfo> Animations,
-    int fpX,
-    int fpY,
-    int HP,
-    int MS,
-    int Range,
-    int AttackDmg,
-    int Defense,
-    int AttackCDTime,
-    int AttackAnimationTime,
-    bool Aggressive,
-    Rect AgroRange
-    );
+
+    Mobs(coordinates* spawn,
+                        int ID,
+                        int PosX,
+                        int PosY);
 
 	~Mobs(void);
+
+	void LoadConfigs();
 protected:
     bool Aggressive;
     Rect AgroRange;

@@ -133,6 +133,14 @@ namespace net
 
 		unsigned char* ReceivePacket( unsigned char data[], int size );
 
+		bool GetFirstTime() {return firstTime;}
+
+		void ConnectionUsed() {firstTime = false;}
+
+		Address getAddress() {return addressPort;}
+
+		void ConnectOnce() {lastConnect = time (NULL);}
+
 	protected:
 
 		void ClearData();
@@ -151,6 +159,8 @@ namespace net
 
 		unsigned int protocolId;
 		float timeout;
+
+		bool firstTime;
 
 		bool running;
 		Mode mode;
@@ -183,6 +193,8 @@ namespace net
         void Update();
 
 		int Receive( Address & sender, unsigned char * data, int size );
+
+		std::map<unsigned int, Connection*> getConnections() {return connectedClients;}
 
 	private:
 
