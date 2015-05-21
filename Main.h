@@ -22,6 +22,7 @@ private:
 
 	int timeCheck;
 
+
 	std::vector<Characters*> characters;
 	std::vector<Mobs*> mobs;
 	std::vector<Normal*> normal;

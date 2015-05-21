@@ -10,7 +10,7 @@ CMain::CMain()
 		std::cout << "failed to initialize sockets\n" << std::endl;
 
 	}
-    socket = new net::Socket( ProtocolId, TimeOut, ServerPort);
+    socket = new net::Socket( ProtocolId,  ServerPort);
 	// create socket
 
 	std::cout << "creating socket on port " <<  ServerPort  << std::endl;
@@ -27,6 +27,7 @@ CMain::CMain()
 
     spawn.x = 300;
     spawn.y = 150;
+
 }
 
 
@@ -44,6 +45,11 @@ void CMain::LoadStage()
                                         100,
                                         100,
                                         "LOL"));
+    characters.push_back(new Characters(&spawn,
+                                        1,
+                                        400,
+                                        300,
+                                        "LOL2"));
 
     /*mobs.push_back(new Mobs(&spawn,
                             1,
@@ -154,126 +160,186 @@ void CMain::LoadPackets()
     (*socket).Update();
     net::Address sender;
     unsigned char buffer[256];
-    int bytes_read = (*socket).Receive( sender, buffer, sizeof( buffer ) );
+    std::string login;
+    int bytes_read = (*socket).Receive( sender, buffer, sizeof( buffer ), &login );
     if ( bytes_read )
     {
         /*printf( "received packet from %d.%d.%d.%d:%d (%d bytes)\n",
             sender.GetA(), sender.GetB(), sender.GetC(), sender.GetD(),
             sender.GetPort(), bytes_read );*/
-    }
-    //анализ пакета
-    if(buffer[4] == 10)
-    {
-        std::string login;
-        int i = 0;
-        for(int n=5; n<=13;n++, i++)
+            //анализ пакета
+        if(buffer[16] == 10 || buffer[0] == 10)
         {
-            if(buffer[i] == 0)
-                break;
-            login += buffer[n];
-        }
-        std::cout << "login: " << login << std::endl;
-        std::string pass;
-        for(int n=14; n<=22;n++)
-        {
-            pass += buffer[n];
-        }
-        std::cout << "pass: " << pass << std::endl;
-        int res = LoginClient(login, pass);
-        if(res == 0)
-        {
-            std::cout << "pass not correct" << std::endl;
-            char data[1];
-            data[0] = 201;
-
-            unsigned char packet[sizeof(data)+4];
-            packet[0] = (unsigned char) ( ProtocolId >> 24 );
-            packet[1] = (unsigned char) ( ( ProtocolId >> 16 ) & 0xFF );
-            packet[2] = (unsigned char) ( ( ProtocolId >> 8 ) & 0xFF );
-            packet[3] = (unsigned char) ( ( ProtocolId ) & 0xFF );
-            memcpy( &packet[4], data, sizeof(data) );
-
-            (*socket).Send(net::Address(sender.GetA(),
-                                        sender.GetB(),
-                                        sender.GetC(),
-                                        sender.GetD(),
-                                        sender.GetPort()),
-                                        packet,
-                                        sizeof(packet) );
-
-            std::cout<< "Sent error packet" << std::endl;
-        }
-
-        else if(res == 1)
-        {
-            std::cout << "all good" << std::endl;
-        }
-
-        else if(res == 2)
-        {
-            std::cout << "reg. new login" << std::endl;
-            characters.push_back(new Characters(&spawn,
-                                                0,
-                                                500,
-                                                500,
-                                                login
-                                                ));
-        }
-
-    }
-    else if(buffer[4] == 23)
-    {
-        unsigned int Size = (unsigned int)(buffer[5] << 24) + (unsigned int)(buffer[6]<< 16) + (unsigned int)(buffer[7] << 8) + buffer[8];
-        //std::cout << Size << std::endl;
-        bool fragments[Size];
-        for(int i = 0; i < Size;i++)
-        {
-
-            fragments[i] = false;
-        }
-        while( !allTrue(fragments, Size))
-        {
-            socket->Update();
-            unsigned char buffer[256];
-            int bytes_read = socket->Receive( sender, buffer, sizeof( buffer ) );
-
-            if(buffer[4] == 24)
+            for(int i = 0; i < 19; i++)
+                std::cout << int(buffer[i]) << " ";
+            std::cout << std::endl;
+            std::string pass;
+            for(int n=17; n<25;n++)
             {
-                unsigned int Number = (unsigned int)(buffer[5] << 24) + (unsigned int)(buffer[6]<< 16) + (unsigned int)(buffer[7] << 8) + buffer[8];
-                //std::cout << Number << std::endl;
-                fragments[Number] = true;
-                unsigned int ID = (unsigned int)(buffer[9] << 24) + (unsigned int)(buffer[10]<< 16) + (unsigned int)(buffer[11] << 8) + buffer[12];
-                //std::cout << ID << std::endl;
-                unsigned int X = (unsigned int)(buffer[13] << 24) + (unsigned int)(buffer[14]<< 16) + (unsigned int)(buffer[15] << 8) + buffer[16];
-                //std::cout << X << std::endl;
-                unsigned int Y = (unsigned int)(buffer[17] << 24) + (unsigned int)(buffer[18]<< 16) + (unsigned int)(buffer[19] << 8) + buffer[20];
-                //std::cout << Y << std::endl;
-                std::string Nickname;
-                for(int i = 21; i <=28; i++)
-                {
-                    if(buffer[i] == 0)
-                        break;
-                    Nickname += buffer[i];
-                }
-                //std::cout << Nickname << std::endl;
+                if(buffer[n] != 0)
+                    pass += buffer[n];
+            }
+            std::cout << "login: " << login << std::endl;
+            std::cout << "pass: " << pass << std::endl;
+            int res = LoginClient(login, pass);
+            if(res == 0)
+            {
+                std::cout << "pass not correct" << std::endl;
+                char data[1];
+                data[0] = 201;
 
-                bool existNickname;
-                int l=0;
-                for(std::vector<Characters*>::iterator it = characters.begin(); it != characters.end(); ++it,++l)
+                unsigned char packet[sizeof(data)+4];
+                packet[0] = (unsigned char) ( ProtocolId >> 24 );
+                packet[1] = (unsigned char) ( ( ProtocolId >> 16 ) & 0xFF );
+                packet[2] = (unsigned char) ( ( ProtocolId >> 8 ) & 0xFF );
+                packet[3] = (unsigned char) ( ( ProtocolId ) & 0xFF );
+                memcpy( &packet[4], data, sizeof(data) );
+                //отослать пакеты клиенту
+                (*socket).getConnections()[login]->Send(packet,
+                                                        sizeof(packet) );
+
+                std::cout<< "Sent error packet" << std::endl;
+            }
+
+            else if(res == 1)
+            {
+                std::cout << "all good" << std::endl;
+            }
+
+            else if(res == 2)
+            {
+                std::cout << "reg. new login: " << login << std::endl;
+                characters.push_back(new Characters(&spawn,
+                                                    0,
+                                                    500,
+                                                    500,
+                                                    login
+                                                    ));
+            }
+
+        }
+        else if(buffer[0] == 23)
+        {
+            unsigned int Size = (unsigned int)(buffer[1] << 24) + (unsigned int)(buffer[2]<< 16) + (unsigned int)(buffer[3] << 8) + buffer[4];
+            //std::cout << Size << std::endl;
+            bool fragments[Size];
+            for(int i = 0; i < Size;i++)
+            {
+
+                fragments[i] = false;
+            }
+            while( !allTrue(fragments, Size))
+            {
+                socket->Update();
+                unsigned char buffer[256];
+                int bytes_read = socket->Receive( sender, buffer, sizeof( buffer ), &login );
+
+                if(buffer[0] == 24)
                 {
-                    if((*it)->getNickName() == Nickname)
+                    unsigned int Number = (unsigned int)(buffer[1] << 24) + (unsigned int)(buffer[2]<< 16) + (unsigned int)(buffer[3] << 8) + buffer[4];
+                    //std::cout << Number << std::endl;
+                    fragments[Number] = true;
+                    unsigned int ID = (unsigned int)(buffer[5] << 24) + (unsigned int)(buffer[6]<< 16) + (unsigned int)(buffer[7] << 8) + buffer[8];
+                    //std::cout << ID << std::endl;
+                    unsigned int X = (unsigned int)(buffer[9] << 24) + (unsigned int)(buffer[10]<< 16) + (unsigned int)(buffer[11] << 8) + buffer[12];
+                    //std::cout << X << std::endl;
+                    unsigned int Y = (unsigned int)(buffer[13] << 24) + (unsigned int)(buffer[14]<< 16) + (unsigned int)(buffer[15] << 8) + buffer[16];
+                    //std::cout << Y << std::endl;
+                    std::string Nickname;
+                    for(int i = 17; i <=24; i++)
                     {
-                        existNickname = true;
-                        characters[l]->changeXY(X,Y);
+                        if(buffer[i] == 0)
+                            break;
+                        Nickname += buffer[i];
+                    }/*
+                    if(Nickname.size() > 8)
+                    {
+                        for(std::string::iterator i = Nickname.end(); i != Nickname.begin()+2; i--)
+                        {
+                            Nickname.erase(i);
+                        }
+                    }*/
+                    //std::cout << Nickname << std::endl;
+
+                    bool existNickname;
+                    int l=0;
+                    for(std::vector<Characters*>::iterator it = characters.begin(); it != characters.end(); ++it,++l)
+                    {
+                        if((*it)->getNickName() == Nickname)
+                        {
+                            existNickname = true;
+                            std::cout << (*it)->getNickName() << std::endl;
+                            characters[l]->changeXY(X,Y);
+                        }
+                    }
+                    if(!existNickname)
+                    {
+                        std::cout <<"lol " << Nickname << std::endl;
+                        characters.push_back(new Characters(&spawn,
+                                            1,
+                                            spawn.x,
+                                            spawn.y,
+                                            Nickname));
+
+                        std::cout << "Creating: " << Nickname << std::endl;
                     }
                 }
+            }
+        //если пакет при регистрации и не подходит по паролю, то отправить пакет с ошибкой и удалить connection
+        for(int i = 0; i < 256; i++)
+            buffer[i] = ' ';
+        }
+        if(buffer[0] == 24)
+        {
+            unsigned int ID = (unsigned int)(buffer[1] << 24) + (unsigned int)(buffer[2]<< 16) + (unsigned int)(buffer[3] << 8) + buffer[4];
+            //std::cout << ID << std::endl;
+            unsigned int X = (unsigned int)(buffer[5] << 24) + (unsigned int)(buffer[6]<< 16) + (unsigned int)(buffer[7] << 8) + buffer[8];
+            //std::cout << X << std::endl;
+            unsigned int Y = (unsigned int)(buffer[9] << 24) + (unsigned int)(buffer[10]<< 16) + (unsigned int)(buffer[11] << 8) + buffer[12];
+            //std::cout << Y << std::endl;
+            std::string Nickname;
+            for(int i = 13; i <=20; i++)
+            {
+                if(buffer[i] == 0)
+                    break;
+                Nickname += buffer[i];
+            }
+            //std::cout << Nickname << std::endl;
 
+            bool existNickname;
+            int l=0;
+            for(std::vector<Characters*>::iterator it = characters.begin(); it != characters.end(); ++it,++l)
+            {
+                if((*it)->getNickName() == Nickname)
+                {
+                    existNickname = true;
+                    characters[l]->changeXY(X,Y);
+                }
+            }
+            if(!existNickname)
+            {
+                characters.push_back(new Characters(&spawn,
+                                    1,
+                                    spawn.x,
+                                    spawn.y,
+                                    Nickname));
+
+                std::cout << "Creating: " << Nickname << std::endl;
             }
         }
-    //если пакет при регистрации и не подходит по паролю, то отправить пакет с ошибкой и удалить connection
-    for(int i = 0; i < 256; i++)
-        buffer[i] = ' ';
+        else if(buffer[0] == 254)
+        {
+
+        }
+        else
+        {
+
+            std::cout << "bad packet" << int(buffer[16]) << " " << int(buffer[0]) << std::endl;
+            for(int i = 0; i < 256; i++)
+                buffer[i] = ' ';
+        }
     }
+
 }
 
 void CMain::Calculation()
@@ -282,11 +348,11 @@ void CMain::Calculation()
 }
 void CMain::SendPackets()
 {
-    std::map<unsigned int, net::Connection*> tmpcon;
+    std::map<std::string, net::Connection*> tmpcon;
     tmpcon = socket->getConnections();
     if(tmpcon.size() != 0) //костыль
     {
-        for (std::map<unsigned int, net::Connection*>::iterator it = tmpcon.begin(); it != tmpcon.end(); ++it)
+        for (std::map<std::string, net::Connection*>::iterator it = tmpcon.begin(); it != tmpcon.end(); ++it)
         {
             net::Address client = it->second->getAddress();
             //std::cout << int(client.GetA())<< "." << int(client.GetB())<< "."  << int(client.GetC())<< "."  << int(client.GetD())<< "."  << client.GetPort() << std::endl;
@@ -304,17 +370,7 @@ void CMain::SendPackets()
                 data[2] = (unsigned char) ( ground.size() >> 16 );
                 data[3] = (unsigned char) ( ground.size() >> 8 );
                 data[4] = (unsigned char) ( ground.size() );
-
-                unsigned char packet[sizeof(data)+4];
-                packet[0] = (unsigned char) ( ProtocolId >> 24 );
-                packet[1] = (unsigned char) ( ( ProtocolId >> 16 ) & 0xFF );
-                packet[2] = (unsigned char) ( ( ProtocolId >> 8 ) & 0xFF );
-                packet[3] = (unsigned char) ( ( ProtocolId ) & 0xFF );
-                memcpy( &packet[4], data, sizeof(data) );
-
-                (*socket).Send(client,
-                                packet,
-                                sizeof(packet) );
+                it->second->Send(data, 5);
 
                 //std::cout<< "Sent map packet" << std::endl;
 
@@ -347,16 +403,8 @@ void CMain::SendPackets()
                     data[15] = (unsigned char) ( ground[i]->getY() >> 8 );
                     data[16] = (unsigned char) ( ground[i]->getY() );
 
-                    unsigned char packet[sizeof(data)+4];
-                    packet[0] = (unsigned char) ( ProtocolId >> 24 );
-                    packet[1] = (unsigned char) ( ( ProtocolId >> 16 ) & 0xFF );
-                    packet[2] = (unsigned char) ( ( ProtocolId >> 8 ) & 0xFF );
-                    packet[3] = (unsigned char) ( ( ProtocolId ) & 0xFF );
-                    memcpy( &packet[4], data, sizeof(data) );
 
-                    (*socket).Send(client,
-                                    packet,
-                                    sizeof(packet) );
+                    it->second->Send(data, 17);
 
                     //std::cout<< "Sent map fragment" << i << std::endl;
                 }
@@ -370,16 +418,8 @@ void CMain::SendPackets()
                 data[3] = (unsigned char) ( characters.size() >> 8 );
                 data[4] = (unsigned char) ( characters.size() );
 
-                unsigned char packet[sizeof(data)+4];
-                packet[0] = (unsigned char) ( ProtocolId >> 24 );
-                packet[1] = (unsigned char) ( ( ProtocolId >> 16 ) & 0xFF );
-                packet[2] = (unsigned char) ( ( ProtocolId >> 8 ) & 0xFF );
-                packet[3] = (unsigned char) ( ( ProtocolId ) & 0xFF );
-                memcpy( &packet[4], data, sizeof(data) );
 
-                (*socket).Send(client,
-                                packet,
-                                sizeof(packet) );
+                it->second->Send(data, 5);
 
 
                 for(int i = 0; i < characters.size(); i++)
@@ -421,16 +461,8 @@ void CMain::SendPackets()
                     data[23] = (unsigned char) ( characters[i]->getNickName()[6]);
                     data[24] = (unsigned char) ( characters[i]->getNickName()[7]);
 
-                    unsigned char packet[sizeof(data)+4];
-                    packet[0] = (unsigned char) ( ProtocolId >> 24 );
-                    packet[1] = (unsigned char) ( ( ProtocolId >> 16 ) & 0xFF );
-                    packet[2] = (unsigned char) ( ( ProtocolId >> 8 ) & 0xFF );
-                    packet[3] = (unsigned char) ( ( ProtocolId ) & 0xFF );
-                    memcpy( &packet[4], data, sizeof(data) );
 
-                    (*socket).Send(client,
-                                    packet,
-                                    sizeof(packet) );
+                    it->second->Send(data, 25);
                 }
             }
         }

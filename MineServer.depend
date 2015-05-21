@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1431925459 source:c:\users\avdrine\documents\github\dserver\main.cpp
+1432241590 source:c:\users\avdrine\documents\github\dserver\main.cpp
 	"Main.h"
 
-1431895585 c:\users\avdrine\documents\github\dserver\main.h
+1432193886 c:\users\avdrine\documents\github\dserver\main.h
 	"libraries.h"
 
-1431615295 c:\users\avdrine\documents\github\dserver\libraries.h
+1431615296 c:\users\avdrine\documents\github\dserver\libraries.h
 	<iostream>
 	<vector>
 	<map>
@@ -19,7 +19,7 @@
 	"struct.h"
 	"objects.h"
 
-1431922384 c:\users\avdrine\documents\github\dserver\net.h
+1432206156 c:\users\avdrine\documents\github\dserver\net.h
 	<winsock2.h>
 	<sys/socket.h>
 	<netinet/in.h>
@@ -27,11 +27,13 @@
 	<assert.h>
 	<map>
 	<ctime>
+	<iostream>
+	<SDL.h>
 	<unistd.h>
 
-1431921839 c:\users\avdrine\documents\github\dserver\struct.h
+1431921840 c:\users\avdrine\documents\github\dserver\struct.h
 
-1431548962 c:\users\avdrine\documents\github\dserver\objects.h
+1431548964 c:\users\avdrine\documents\github\dserver\objects.h
 	"objects/Environment.h"
 	"objects/Environment/Live.h"
 	"objects/Environment/Live/Characters.h"
@@ -161,15 +163,825 @@
 1431549849 source:c:\users\avdrine\documents\github\dserver\objects\items\usable.cpp
 	"Usable.h"
 
-1431899434 source:c:\users\avdrine\documents\github\dserver\startserver.cpp
+1432218590 source:c:\users\avdrine\documents\github\dserver\startserver.cpp
 	"Main.h"
 
-1431924418 source:c:\users\avdrine\documents\github\dserver\net.cpp
+1432222880 source:c:\users\avdrine\documents\github\dserver\net.cpp
 	"Net.h"
 	<cstdio>
 	<winsock2.h>
 	<iostream>
 
-1431921999 source:c:\users\avdrine\documents\github\dserver\struct.cpp
+1431922000 source:c:\users\avdrine\documents\github\dserver\struct.cpp
+	"struct.h"
+
+1394937196 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1394937197 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1410295088 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\begin_code.h
+
+1394937197 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\close_code.h
+
+1394937196 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1394937196 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1394937197 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1394937197 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1394937196 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1394937196 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937196 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394937197 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1431918386 source:c:\users\8\desktop\d\dserver\objects\environment.cpp
+	"Environment.h"
+
+1431918284 c:\users\8\desktop\d\dserver\objects\environment.h
+	<string>
+	<vector>
+	<iostream>
+	<fstream>
+	<sstream>
+	<stdlib.h>
+	"../struct.h"
+
+1431918240 c:\users\8\desktop\d\dserver\struct.h
+
+1431874374 source:c:\users\8\desktop\d\dserver\objects\environment\live.cpp
+	"Live.h"
+
+1431874876 c:\users\8\desktop\d\dserver\objects\environment\live.h
+	"../Environment.h"
+
+1431874532 source:c:\users\8\desktop\d\dserver\objects\environment\live\characters.cpp
+	"Characters.h"
+
+1431910856 c:\users\8\desktop\d\dserver\objects\environment\live\characters.h
+	"../Live.h"
+	"../../Items.h"
+
+1431891890 c:\users\8\desktop\d\dserver\objects\items.h
+
+1431892682 source:c:\users\8\desktop\d\dserver\objects\environment\live\mobs.cpp
+	"Mobs.h"
+
+1431891896 c:\users\8\desktop\d\dserver\objects\environment\live\mobs.h
+	"../Live.h"
+	"../../../struct.h"
+
+1431874362 source:c:\users\8\desktop\d\dserver\objects\environment\nonlive.cpp
+	"NonLive.h"
+
+1431874860 c:\users\8\desktop\d\dserver\objects\environment\nonlive.h
+	"../Environment.h"
+
+1431874500 source:c:\users\8\desktop\d\dserver\objects\environment\nonlive\ground.cpp
+	"Ground.h"
+
+1431876716 c:\users\8\desktop\d\dserver\objects\environment\nonlive\ground.h
+	"../NonLive.h"
+
+1431874384 source:c:\users\8\desktop\d\dserver\objects\environment\nonlive\objects.cpp
+	"Objects.h"
+
+1431874892 c:\users\8\desktop\d\dserver\objects\environment\nonlive\objects.h
+	"../NonLive.h"
+
+1431874506 source:c:\users\8\desktop\d\dserver\objects\environment\nonlive\objects\normal.cpp
+	"Normal.h"
+
+1431876698 c:\users\8\desktop\d\dserver\objects\environment\nonlive\objects\normal.h
+	"../Objects.h"
+
+1431874504 source:c:\users\8\desktop\d\dserver\objects\environment\nonlive\objects\trigger.cpp
+	"Trigger.h"
+
+1431876702 c:\users\8\desktop\d\dserver\objects\environment\nonlive\objects\trigger.h
+	"../Objects.h"
+
+1431874502 source:c:\users\8\desktop\d\dserver\objects\environment\nonlive\objects\wtrig.cpp
+	"Wtrig.h"
+
+1431876708 c:\users\8\desktop\d\dserver\objects\environment\nonlive\objects\wtrig.h
+	"../Objects.h"
+
+1431546198 source:c:\users\8\desktop\d\dserver\objects\items.cpp
+	"Items.h"
+
+1431546204 source:c:\users\8\desktop\d\dserver\objects\items\equip.cpp
+	"Equip.h"
+
+1431891902 c:\users\8\desktop\d\dserver\objects\items\equip.h
+	"../Items.h"
+
+1431540964 source:c:\users\8\desktop\d\dserver\objects\items\equip\armor.cpp
+	"Armor.h"
+
+1431545666 c:\users\8\desktop\d\dserver\objects\items\equip\armor.h
+	"../Equip.h"
+
+1431541142 source:c:\users\8\desktop\d\dserver\objects\items\equip\weapon.cpp
+	"Weapon.h"
+
+1431546228 c:\users\8\desktop\d\dserver\objects\items\equip\weapon.h
+	<string>
+	"../Equip.h"
+
+1431892690 source:c:\users\8\desktop\d\dserver\objects\items\equip\weapon\melee.cpp
+	"Melee.h"
+
+1431891914 c:\users\8\desktop\d\dserver\objects\items\equip\weapon\melee.h
+	"../Weapon.h"
+	"../../../../struct.h"
+
+1431541402 source:c:\users\8\desktop\d\dserver\objects\items\equip\weapon\range.cpp
+	"Range.h"
+
+1431545660 c:\users\8\desktop\d\dserver\objects\items\equip\weapon\range.h
+	"../Weapon.h"
+
+1431546250 source:c:\users\8\desktop\d\dserver\objects\items\usable.cpp
+	"Usable.h"
+
+1431545682 c:\users\8\desktop\d\dserver\objects\items\usable.h
+	"../Items.h"
+
+1432214989 source:c:\users\8\desktop\d\dserver\startserver.cpp
+	"Main.h"
+
+1432190285 c:\users\8\desktop\d\dserver\main.h
+	"libraries.h"
+
+1431611696 c:\users\8\desktop\d\dserver\libraries.h
+	<iostream>
+	<vector>
+	<map>
+	<fstream>
+	<sstream>
+	<string>
+	<cstdlib>
+	<windows.h>
+	<math.h>
+	"Net.h"
+	"struct.h"
+	"objects.h"
+
+1432202555 c:\users\8\desktop\d\dserver\net.h
+	<winsock2.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<fcntl.h>
+	<assert.h>
+	<map>
+	<ctime>
+	<iostream>
+	<SDL.h>
+	<unistd.h>
+
+1431545364 c:\users\8\desktop\d\dserver\objects.h
+	"objects/Environment.h"
+	"objects/Environment/Live.h"
+	"objects/Environment/Live/Characters.h"
+	"objects/Environment/Live/Mobs.h"
+	"objects/Environment/NonLive.h"
+	"objects/Environment/NonLive/Objects.h"
+	"objects/Environment/NonLive/Objects/Normal.h"
+	"objects/Environment/NonLive/Objects/Trigger.h"
+	"objects/Environment/NonLive/Objects/Wtrig.h"
+	"objects/Environment/NonLive/Ground.h"
+	"objects/Items.h"
+	"objects/Items/Equip.h"
+	"objects/Items/Equip/Armor.h"
+	"objects/Items/Equip/Weapon.h"
+	"objects/Items/Equip/Weapon/Melee.h"
+	"objects/Items/Equip/Weapon/Range.h"
+	"objects/Items/Usable.h"
+
+1394933596 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933596 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933598 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1394933598 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1410291490 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1394933598 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\begin_code.h
+
+1394933598 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\close_code.h
+
+1394933596 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1394933596 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933596 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933596 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933596 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1394933598 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933598 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1394933598 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933596 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933596 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1394933596 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933598 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933598 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933598 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933598 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933596 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1394933596 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933596 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1394933598 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1394933596 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933596 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933596 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933598 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1394933596 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933598 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933596 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933596 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933596 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933596 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933596 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933596 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933598 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933598 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933598 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933598 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394933598 c:\users\8\desktop\d\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1432218952 source:c:\users\8\desktop\d\dserver\main.cpp
+	"Main.h"
+
+1432215483 source:c:\users\8\desktop\d\dserver\net.cpp
+	"Net.h"
+	<cstdio>
+	<winsock2.h>
+	<iostream>
+
+1431918400 source:c:\users\8\desktop\d\dserver\struct.cpp
 	"struct.h"
 
