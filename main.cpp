@@ -54,7 +54,7 @@ void CMain::LoadStage()
     /*mobs.push_back(new Mobs(&spawn,
                             1,
                             100,
-                            100));*/
+                            100));
     ground.push_back(new Ground(&spawn,
                             1,
                             100,
@@ -66,7 +66,7 @@ void CMain::LoadStage()
     ground.push_back(new Ground(&spawn,
                             1,
                             400,
-                            300));
+                            300));*/
     normal.push_back(new Normal(&spawn,
                             1,
                             100,
