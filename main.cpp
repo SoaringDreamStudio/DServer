@@ -259,7 +259,7 @@ void CMain::LoadPackets()
                             Nickname.erase(i);
                         }
                     }*/
-                    //std::cout << Nickname << std::endl;
+                    std::cout << Nickname << std::endl;
 
                     bool existNickname;
                     int l=0;
@@ -291,14 +291,16 @@ void CMain::LoadPackets()
         }
         if(buffer[0] == 24)
         {
-            unsigned int ID = (unsigned int)(buffer[1] << 24) + (unsigned int)(buffer[2]<< 16) + (unsigned int)(buffer[3] << 8) + buffer[4];
+            unsigned int Number = (unsigned int)(buffer[1] << 24) + (unsigned int)(buffer[2]<< 16) + (unsigned int)(buffer[3] << 8) + buffer[4];
+
+            unsigned int ID = (unsigned int)(buffer[5] << 24) + (unsigned int)(buffer[6]<< 16) + (unsigned int)(buffer[7] << 8) + buffer[8];
             //std::cout << ID << std::endl;
-            unsigned int X = (unsigned int)(buffer[5] << 24) + (unsigned int)(buffer[6]<< 16) + (unsigned int)(buffer[7] << 8) + buffer[8];
+            unsigned int X = (unsigned int)(buffer[9] << 24) + (unsigned int)(buffer[10]<< 16) + (unsigned int)(buffer[11] << 8) + buffer[12];
             //std::cout << X << std::endl;
-            unsigned int Y = (unsigned int)(buffer[9] << 24) + (unsigned int)(buffer[10]<< 16) + (unsigned int)(buffer[11] << 8) + buffer[12];
+            unsigned int Y = (unsigned int)(buffer[13] << 24) + (unsigned int)(buffer[14]<< 16) + (unsigned int)(buffer[15] << 8) + buffer[16];
             //std::cout << Y << std::endl;
             std::string Nickname;
-            for(int i = 13; i <=20; i++)
+            for(int i = 17; i <=24; i++)
             {
                 if(buffer[i] == 0)
                     break;
@@ -355,7 +357,7 @@ void CMain::SendPackets()
         for (std::map<std::string, net::Connection*>::iterator it = tmpcon.begin(); it != tmpcon.end(); ++it)
         {
             net::Address client = it->second->getAddress();
-            //std::cout << int(client.GetA())<< "." << int(client.GetB())<< "."  << int(client.GetC())<< "."  << int(client.GetD())<< "."  << client.GetPort() << std::endl;
+            std::cout << int(client.GetA())<< "." << int(client.GetB())<< "."  << int(client.GetC())<< "."  << int(client.GetD())<< "."  << client.GetPort() << std::endl;
 
             if (it->second->GetFirstTime() )
             {
