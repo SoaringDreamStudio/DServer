@@ -441,6 +441,14 @@
                                                                         (*login),
                                                                         this);
                         }
+                        connectedClients[(*login)]->ReceivePacket(buffer, size-16, NumberOfPacket);
+
+                        for(int i = 0; i < size; i++)
+                        {
+                            data[i] = 0;
+                        }
+
+                        memcpy( data, &buffer[0], size-16 );
 
 
                     }

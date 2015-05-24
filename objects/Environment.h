@@ -23,6 +23,8 @@ public:
 	int getX() {return PosX;}
 	int getY() {return PosY;}
 
+    void setActiveAnimation(std::string passed_AA) { ActiveAnimation = passed_AA;}
+    std::string getActiveAnimation() {return ActiveAnimation;}
 
 protected:
     bool ExistOnMap;
