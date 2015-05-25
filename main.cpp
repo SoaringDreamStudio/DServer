@@ -152,6 +152,31 @@ void CMain::LoadStage()
                             1,
                             100,
                             100));
+    normal.push_back(new Normal(&spawn,
+                            2,
+                            300,
+                            100));
+    normal.push_back(new Normal(&spawn,
+                            3,
+                            500,
+                            100));
+    normal.push_back(new Normal(&spawn,
+                            4,
+                            700,
+                            100));
+    normal.push_back(new Normal(&spawn,
+                            5,
+                            100,
+                            200));
+    normal.push_back(new Normal(&spawn,
+                            6,
+                            300,
+                            200));
+    normal.push_back(new Normal(&spawn,
+                            7,
+                            500,
+                            200));
+
     trigger.push_back(new Trigger(&spawn,
                             1,
                             100,
@@ -748,7 +773,7 @@ void CMain::SendPackets()
                 std::cout << "FirstTimeUsed" << std::endl;
 
                 socket->getConnections()[it->first]->ConnectionUsed();
-
+                //Grounds
                 unsigned char data[5];
                 data[0] = 21;
                 data[1] = (unsigned char) ( ground.size() >> 24 );
@@ -787,6 +812,50 @@ void CMain::SendPackets()
                     data[14] = (unsigned char) ( ground[i]->getY() >> 16 );
                     data[15] = (unsigned char) ( ground[i]->getY() >> 8 );
                     data[16] = (unsigned char) ( ground[i]->getY() );
+
+
+                    it->second->Send(data, 17);
+                }
+
+                //normal
+                std::cout << "normal.size() " << normal.size() << std::endl;
+                data[0] = 25;
+                data[1] = (unsigned char) ( normal.size() >> 24 );
+                data[2] = (unsigned char) ( normal.size() >> 16 );
+                data[3] = (unsigned char) ( normal.size() >> 8 );
+                data[4] = (unsigned char) ( normal.size() );
+                it->second->Send(data, 5);
+
+                //std::cout<< "Sent map packet" << std::endl;
+
+                for(int i = 0; i < normal.size(); i++)
+                {
+                    unsigned char data[17];
+                    data[0] = 26;
+
+                    //NumberOfPacket
+                    data[1] = (unsigned char) ( i >> 24 );
+                    data[2] = (unsigned char) ( i >> 16 );
+                    data[3] = (unsigned char) ( i >> 8 );
+                    data[4] = (unsigned char) ( i );
+
+                    //ID
+                    data[5] = (unsigned char) ( normal[i]->getID() >> 24 );
+                    data[6] = (unsigned char) ( normal[i]->getID() >> 16 );
+                    data[7] = (unsigned char) ( normal[i]->getID() >> 8 );
+                    data[8] = (unsigned char) ( normal[i]->getID() );
+
+                    //X
+                    data[9] = (unsigned char) ( normal[i]->getX() >> 24 );
+                    data[10] = (unsigned char) ( normal[i]->getX() >> 16 );
+                    data[11] = (unsigned char) ( normal[i]->getX() >> 8 );
+                    data[12] = (unsigned char) ( normal[i]->getX() );
+
+                    //Y
+                    data[13] = (unsigned char) ( normal[i]->getY() >> 24 );
+                    data[14] = (unsigned char) ( normal[i]->getY() >> 16 );
+                    data[15] = (unsigned char) ( normal[i]->getY() >> 8 );
+                    data[16] = (unsigned char) ( normal[i]->getY() );
 
 
                     it->second->Send(data, 17);
@@ -971,6 +1040,9 @@ void CMain::SendPackets()
 
 
                    // std::cout<< "Sent map fragment" << i << std::endl;
+
+
+
 
             }
 
