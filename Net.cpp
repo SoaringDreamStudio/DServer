@@ -306,6 +306,7 @@
             i -> second->Update( );
             if(i->second->IsDisconencted())
             {
+                lastDisconnected.push_back(i->first);
                 connectedClients.erase(i);
                 i = connectedClients.begin();
                 break;
@@ -476,3 +477,18 @@
 
     }
 
+    std::vector<std::string> Socket::getDisconected()
+    {
+        std::vector<std::string> tmp;
+        tmp = lastDisconnected;
+        for(std::vector<std::string>::iterator i = lastDisconnected.begin(); i != lastDisconnected.end(); ++i)
+        {
+                lastDisconnected.erase(i);
+                i = lastDisconnected.begin();
+                if(lastDisconnected.begin() == lastDisconnected.end())
+                    break;
+        }
+        lastDisconnected.clear();
+        return tmp;
+
+    }

@@ -1,11 +1,12 @@
 # depslib dependency file v1.0
-1432501738 source:c:\users\avdrine\documents\github\dserver\main.cpp
+1434447792 source:c:\users\avdrine\documents\github\dserver\main.cpp
 	"Main.h"
 
-1432472810 c:\users\avdrine\documents\github\dserver\main.h
+1432931393 c:\users\avdrine\documents\github\dserver\main.h
 	"libraries.h"
+	<SDL.h>
 
-1432472810 c:\users\avdrine\documents\github\dserver\libraries.h
+1432472812 c:\users\avdrine\documents\github\dserver\libraries.h
 	<iostream>
 	<vector>
 	<map>
@@ -19,7 +20,7 @@
 	"struct.h"
 	"objects.h"
 
-1432472810 c:\users\avdrine\documents\github\dserver\net.h
+1433758752 c:\users\avdrine\documents\github\dserver\net.h
 	<winsock2.h>
 	<sys/socket.h>
 	<netinet/in.h>
@@ -29,11 +30,12 @@
 	<ctime>
 	<iostream>
 	<SDL.h>
+	<vector>
 	<unistd.h>
 
-1432472811 c:\users\avdrine\documents\github\dserver\struct.h
+1432472812 c:\users\avdrine\documents\github\dserver\struct.h
 
-1432472810 c:\users\avdrine\documents\github\dserver\objects.h
+1432472812 c:\users\avdrine\documents\github\dserver\objects.h
 	"objects/Environment.h"
 	"objects/Environment/Live.h"
 	"objects/Environment/Live/Characters.h"
@@ -52,7 +54,7 @@
 	"objects/Items/Equip/Weapon/Range.h"
 	"objects/Items/Usable.h"
 
-1432473090 c:\users\avdrine\documents\github\dserver\objects\environment.h
+1432473092 c:\users\avdrine\documents\github\dserver\objects\environment.h
 	<string>
 	<vector>
 	<iostream>
@@ -61,121 +63,121 @@
 	<stdlib.h>
 	"../struct.h"
 
-1432472810 c:\users\avdrine\documents\github\dserver\objects\environment\live.h
+1432472812 c:\users\avdrine\documents\github\dserver\objects\environment\live.h
 	"../Environment.h"
 
-1432472810 c:\users\avdrine\documents\github\dserver\objects\environment\live\characters.h
+1432472812 c:\users\avdrine\documents\github\dserver\objects\environment\live\characters.h
 	"../Live.h"
 	"../../Items.h"
 
-1432472810 c:\users\avdrine\documents\github\dserver\objects\items.h
+1432472812 c:\users\avdrine\documents\github\dserver\objects\items.h
 
-1432472810 c:\users\avdrine\documents\github\dserver\objects\environment\live\mobs.h
+1432472812 c:\users\avdrine\documents\github\dserver\objects\environment\live\mobs.h
 	"../Live.h"
 	"../../../struct.h"
 
-1432472810 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive.h
+1432472812 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive.h
 	"../Environment.h"
 
-1432472810 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects.h
+1432472812 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects.h
 	"../NonLive.h"
 
-1432472810 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\normal.h
+1432472812 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\normal.h
 	"../Objects.h"
 
-1432472810 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\trigger.h
+1432472812 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\trigger.h
 	"../Objects.h"
 
-1432472810 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\wtrig.h
+1432472812 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\wtrig.h
 	"../Objects.h"
 
-1432472810 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\ground.h
+1432472812 c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\ground.h
 	"../NonLive.h"
 
-1432472810 c:\users\avdrine\documents\github\dserver\objects\items\equip.h
+1432472812 c:\users\avdrine\documents\github\dserver\objects\items\equip.h
 	"../Items.h"
 
-1432472810 c:\users\avdrine\documents\github\dserver\objects\items\equip\armor.h
+1432472812 c:\users\avdrine\documents\github\dserver\objects\items\equip\armor.h
 	"../Equip.h"
 
-1432472811 c:\users\avdrine\documents\github\dserver\objects\items\equip\weapon.h
+1432472812 c:\users\avdrine\documents\github\dserver\objects\items\equip\weapon.h
 	<string>
 	"../Equip.h"
 
-1432472811 c:\users\avdrine\documents\github\dserver\objects\items\equip\weapon\melee.h
+1432472812 c:\users\avdrine\documents\github\dserver\objects\items\equip\weapon\melee.h
 	"../Weapon.h"
 	"../../../../struct.h"
 
-1432472811 c:\users\avdrine\documents\github\dserver\objects\items\equip\weapon\range.h
+1432472812 c:\users\avdrine\documents\github\dserver\objects\items\equip\weapon\range.h
 	"../Weapon.h"
 
-1432472811 c:\users\avdrine\documents\github\dserver\objects\items\usable.h
+1432472812 c:\users\avdrine\documents\github\dserver\objects\items\usable.h
 	"../Items.h"
 
-1432472810 source:c:\users\avdrine\documents\github\dserver\objects\environment.cpp
+1432472812 source:c:\users\avdrine\documents\github\dserver\objects\environment.cpp
 	"Environment.h"
 
-1432472810 source:c:\users\avdrine\documents\github\dserver\objects\environment\live.cpp
+1432472812 source:c:\users\avdrine\documents\github\dserver\objects\environment\live.cpp
 	"Live.h"
 
-1432472810 source:c:\users\avdrine\documents\github\dserver\objects\environment\live\characters.cpp
+1432472812 source:c:\users\avdrine\documents\github\dserver\objects\environment\live\characters.cpp
 	"Characters.h"
 
-1432472810 source:c:\users\avdrine\documents\github\dserver\objects\environment\live\mobs.cpp
+1432472812 source:c:\users\avdrine\documents\github\dserver\objects\environment\live\mobs.cpp
 	"Mobs.h"
 
-1432472810 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive.cpp
+1432472812 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive.cpp
 	"NonLive.h"
 
-1432472810 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\ground.cpp
+1432472812 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\ground.cpp
 	"Ground.h"
 
-1432472810 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects.cpp
+1432472812 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects.cpp
 	"Objects.h"
 
-1432472810 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\normal.cpp
+1432472812 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\normal.cpp
 	"Normal.h"
 
-1432472810 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\trigger.cpp
+1432472812 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\trigger.cpp
 	"Trigger.h"
 
-1432472810 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\wtrig.cpp
+1432472812 source:c:\users\avdrine\documents\github\dserver\objects\environment\nonlive\objects\wtrig.cpp
 	"Wtrig.h"
 
-1432472810 source:c:\users\avdrine\documents\github\dserver\objects\items.cpp
+1432472812 source:c:\users\avdrine\documents\github\dserver\objects\items.cpp
 	"Items.h"
 
-1432472810 source:c:\users\avdrine\documents\github\dserver\objects\items\equip.cpp
+1432472812 source:c:\users\avdrine\documents\github\dserver\objects\items\equip.cpp
 	"Equip.h"
 
-1432472810 source:c:\users\avdrine\documents\github\dserver\objects\items\equip\armor.cpp
+1432472812 source:c:\users\avdrine\documents\github\dserver\objects\items\equip\armor.cpp
 	"Armor.h"
 
-1432472811 source:c:\users\avdrine\documents\github\dserver\objects\items\equip\weapon.cpp
+1432472812 source:c:\users\avdrine\documents\github\dserver\objects\items\equip\weapon.cpp
 	"Weapon.h"
 
-1432472811 source:c:\users\avdrine\documents\github\dserver\objects\items\equip\weapon\melee.cpp
+1432472812 source:c:\users\avdrine\documents\github\dserver\objects\items\equip\weapon\melee.cpp
 	"Melee.h"
 
-1432472811 source:c:\users\avdrine\documents\github\dserver\objects\items\equip\weapon\range.cpp
+1432472812 source:c:\users\avdrine\documents\github\dserver\objects\items\equip\weapon\range.cpp
 	"Range.h"
 
-1432472811 source:c:\users\avdrine\documents\github\dserver\objects\items\usable.cpp
+1432472812 source:c:\users\avdrine\documents\github\dserver\objects\items\usable.cpp
 	"Usable.h"
 
-1432473896 source:c:\users\avdrine\documents\github\dserver\startserver.cpp
+1434447537 source:c:\users\avdrine\documents\github\dserver\startserver.cpp
 	"Main.h"
 
-1432474054 source:c:\users\avdrine\documents\github\dserver\net.cpp
+1434448870 source:c:\users\avdrine\documents\github\dserver\net.cpp
 	"Net.h"
 	<cstdio>
 	<winsock2.h>
 	<iostream>
 
-1432472811 source:c:\users\avdrine\documents\github\dserver\struct.cpp
+1432472812 source:c:\users\avdrine\documents\github\dserver\struct.cpp
 	"struct.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl.h
 	"SDL_main.h"
 	"SDL_stdinc.h"
 	"SDL_assert.h"
@@ -206,12 +208,12 @@
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_main.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_main.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_stdinc.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_stdinc.h
 	"SDL_config.h"
 	<sys/types.h>
 	<stdio.h>
@@ -239,33 +241,33 @@
 	<stdlib.h>
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_config.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_config.h
 	"SDL_platform.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_platform.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_platform.h
 	"AvailabilityMacros.h"
 	"TargetConditionals.h"
 	<winapifamily.h>
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\begin_code.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\begin_code.h
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\close_code.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\close_code.h
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_assert.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_assert.h
 	"SDL_config.h"
 	"begin_code.h"
 	<signal.h>
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_atomic.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_atomic.h
 	"SDL_stdinc.h"
 	"SDL_platform.h"
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_audio.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_audio.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_endian.h"
@@ -275,24 +277,24 @@
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_error.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_error.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_endian.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_endian.h
 	"SDL_stdinc.h"
 	<endian.h>
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_mutex.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_mutex.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_thread.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_thread.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_atomic.h"
@@ -301,18 +303,18 @@
 	<process.h>
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_rwops.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_rwops.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_clipboard.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_clipboard.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_cpuinfo.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_cpuinfo.h
 	"SDL_stdinc.h"
 	<intrin.h>
 	<intrin.h>
@@ -324,7 +326,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_events.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_events.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
@@ -338,7 +340,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_video.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_video.h
 	"SDL_stdinc.h"
 	"SDL_pixels.h"
 	"SDL_rect.h"
@@ -346,12 +348,12 @@
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_pixels.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_pixels.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_rect.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_rect.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_pixels.h"
@@ -359,7 +361,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_surface.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_surface.h
 	"SDL_stdinc.h"
 	"SDL_pixels.h"
 	"SDL_rect.h"
@@ -368,11 +370,11 @@
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_blendmode.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_blendmode.h
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_keyboard.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_keyboard.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_keycode.h"
@@ -380,27 +382,27 @@
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_keycode.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_keycode.h
 	"SDL_stdinc.h"
 	"SDL_scancode.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_scancode.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_scancode.h
 	"SDL_stdinc.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_mouse.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_mouse.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_joystick.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_joystick.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_gamecontroller.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_gamecontroller.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_rwops.h"
@@ -408,11 +410,11 @@
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_quit.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_quit.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_gesture.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_gesture.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
@@ -420,60 +422,60 @@
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_touch.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_touch.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_filesystem.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_filesystem.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_haptic.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_haptic.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_joystick.h"
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_hints.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_hints.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_loadso.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_loadso.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_log.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_log.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_messagebox.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_messagebox.h
 	"SDL_stdinc.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_power.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_power.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_render.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_render.h
 	"SDL_stdinc.h"
 	"SDL_rect.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_system.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_system.h
 	"SDL_stdinc.h"
 	"SDL_keyboard.h"
 	"SDL_render.h"
@@ -481,13 +483,13 @@
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_timer.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_timer.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1432472809 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_version.h
+1432472810 c:\users\avdrine\documents\github\dserver\libraries\sdl2-devel-2.0.3-mingw\sdl2-2.0.3\i686-w64-mingw32\include\sdl2\sdl_version.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"

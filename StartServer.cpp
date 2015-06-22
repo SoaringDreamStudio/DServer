@@ -11,6 +11,7 @@ int main(int argc, char *argv[])
     for(;;)
     {
         cmain->LoadPackets();
+        cmain->Calculation();
         cmain->SendPackets();
     }
 	//cmain->Calculation();

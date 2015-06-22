@@ -14,8 +14,18 @@ CMain::CMain()
 	// create socket
 
 	std::cout << "creating socket on port " <<  ServerPort  << std::endl;
-
-
+    std::cout << "Start connecting to DataBase MySQL" << std::endl;
+    int timert3 = SDL_GetTicks();
+    int timert2 = SDL_GetTicks();
+    while(timert3 + 3000 > SDL_GetTicks())
+    {
+        if(timert2 + 299 < SDL_GetTicks())
+        {
+            std::cout << ".";
+            timert2 = SDL_GetTicks();
+        }
+    }
+    std::cout<< (unsigned char)(251) << std::endl << "Connection complete!" << std::endl;
 
 	if ( !(*socket).Open( ServerPort ) )
 	{
@@ -745,6 +755,26 @@ void CMain::LoadPackets()
 
 void CMain::Calculation()
 {
+    std::vector<std::string> disconnected;
+    disconnected = socket->getDisconected();
+    for(int i = 0; i != disconnected.size(); i++)
+    {
+        for(std::vector<Characters*>::iterator it = characters.begin(); it != characters.end(); it++)
+        {
+            if((*it)->getNickName() == disconnected[i])
+            {
+                //std::cout << "(*it)->getNickName(): " << (*it)->getNickName() << std::endl;
+                //std::cout << "disconnected[i]: " << disconnected[i] << std::endl;
+                characters.erase(it);
+                it = characters.begin();
+                if(characters.begin() == characters.end())
+                    break;
+            }
+        }
+    }
+
+    //прогон по всем отключившимся клиентам
+
     //if(!characters.empty())
     //    std::cout << characters[0]->getNickName() << " " << characters[0]->getActiveAnimation() << std::endl;
 
@@ -770,9 +800,11 @@ void CMain::SendPackets()
             {
                 //отправить карту в пакетах
 
-                std::cout << "FirstTimeUsed" << std::endl;
+                std::cout << "FirstTimeUsed " << it->first << std::endl;
 
                 socket->getConnections()[it->first]->ConnectionUsed();
+
+                /*
                 //Grounds
                 unsigned char data[5];
                 data[0] = 21;
@@ -826,7 +858,7 @@ void CMain::SendPackets()
                 data[4] = (unsigned char) ( normal.size() );
                 it->second->Send(data, 5);
 
-                //std::cout<< "Sent map packet" << std::endl;
+                //std::cout<< "Sent map packet" << std::endl;*/
 
                 for(int i = 0; i < normal.size(); i++)
                 {
@@ -861,7 +893,7 @@ void CMain::SendPackets()
                     it->second->Send(data, 17);
                 }
 
-
+                unsigned char data[5];
                 //unsigned char data[5];
                 data[0] = 23;
                 data[1] = (unsigned char) ( characters.size()-1 >> 24 );

@@ -43,6 +43,7 @@
 #include <ctime>
 #include <iostream>
 #include <SDL.h>
+#include <vector>
 
 namespace net
 {
@@ -173,12 +174,15 @@ namespace net
 
 		std::map<std::string, Connection*> getConnections() {return connectedClients;}
 
+		std::vector<std::string> getDisconected();
+
 	private:
 
 		int socket;
 		unsigned int protocolId;
 		int destinationPort;
 		std::map<std::string, Connection*> connectedClients;
+		std::vector<std::string> lastDisconnected;
 	};
 
 

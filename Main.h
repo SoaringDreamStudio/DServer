@@ -1,5 +1,6 @@
 #pragma once
 #include "libraries.h"
+#include <SDL.h>
 class CMain
 {
 public:
